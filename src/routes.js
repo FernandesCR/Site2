@@ -35,23 +35,6 @@ routes.get("/commands", async (req, res) => {
   });
 });
 
-// Rota de Fanarts
-routes.get("/fanarts", (req, res) => {
-  const fanarts = [];
-  const files = readdirSync(
-    join(__dirname, "..", "public", "assets", "fanarts")
-  ).filter((file) => file.endsWith(".webp"));
-
-  files.map((file) => fanarts.push(`/assets/fanarts/${file}`));
-
-  return res.render("fanarts.html", {
-    title: "Fanarts da Lilly",
-    canon: `${config.url}/fanarts`,
-    fanarts,
-    desc: "Veja algumas fanarts da Lilly feitas por pessoas incríveis!",
-  });
-});
-
 // Convite da Lilly
 routes.get("/invite", (req, res) => {
   return res.redirect(
