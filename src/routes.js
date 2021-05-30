@@ -12,7 +12,7 @@ routes.get("/", (req, res) => {
     title: "Lilly, um bot simples mas poderoso para o Discord",
     canon: `${config.url}`,
     desc:
-      "Venha conhecer um dos melhores e mais completos bots do Discord, que vai trazer muita mais alegria, diversão e controle do seu servidor, e o melhor, de graça!",
+      "Venha conhecer um dos melhores e mais completos bot de música do discord, e o melhor e de graça!",
   });
 });
 
@@ -29,7 +29,7 @@ routes.get("/commands", async (req, res) => {
     title: "Comandos da Lilly",
     canon: `${config.url}/commands`,
     desc:
-      "Veja a lista completa de comandos da Lilly sempre atualizada e cheia de comandos realmente úteis para você!",
+      "Veja a lista completa de comandos do jv",
     commands: commands,
     total: commands.length,
   });
@@ -55,29 +55,29 @@ routes.get("/fanarts", (req, res) => {
 // Convite da Lilly
 routes.get("/invite", (req, res) => {
   return res.redirect(
-    "https://discord.com/api/oauth2/authorize?client_id=754548334328283137&permissions=8&scope=bot"
+    "https://discord.com/oauth2/authorize?client_id=766808997982371871&permissions=37080128&scope=bot"
   );
 });
 
 routes.get("/support", (req, res) => {
-  return res.redirect("https://discord.gg/SceHNfZ");
+  return res.redirect("https://discord.gg/e9cfqPSTK8");
 });
 
 routes.get("/community-terms", (req, res) => {
   return res.render("communityTerms.html", {
-    title: "Termos de uso e comunidade da Lilly",
+    title: "Termos de uso",
     canon: `${config.url}/community-terms`,
     desc:
-      "Aqui estão todos as regras que devem ser seguidas pela comunidade para usarem a Lilly sem corre riscos de ser punido.",
+      "Aqui estão todos as regras que devem ser seguidas pela comunidade.",
   });
 });
 
 routes.get("/privacy-policy", (req, res) => {
   return res.render("privacyPolicy.html", {
-    title: "Políticas de Privacidade da Lilly",
+    title: "Políticas de Privacidade",
     canon: `${config.url}/privacy-policy`,
     desc:
-      "Veja todas as políticas de privacidade e como são usados os dados enviados a Lilly.",
+      "Veja todas as políticas de privacidade.",
   });
 });
 
