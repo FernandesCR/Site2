@@ -9,7 +9,7 @@ const api = require("./services/api");
 // Rota Principal
 routes.get("/", (req, res) => {
   return res.render("index.html", {
-    title: "Lilly, um bot simples mas poderoso para o Discord",
+    title: "Jv e um simples bot de música",
     canon: `${config.url}`,
     desc:
       "Venha conhecer um dos melhores e mais completos bot de música do discord, e o melhor e de graça!",
@@ -26,7 +26,7 @@ routes.get("/commands", async (req, res) => {
   commands.sort((a, b) => (a.name > b.name ? 1 : -1));
 
   return res.render("commands.html", {
-    title: "Comandos da Lilly",
+    title: "Comandos do jv",
     canon: `${config.url}/commands`,
     desc:
       "Veja a lista completa de comandos do jv",
