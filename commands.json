@@ -14,9 +14,9 @@
         
 {"name":"uptime","description":"Verifica o tempo ativo.","args":true,"guildOnly":true,"userPermissions":"Nenhuma","lillyPermissions":"Nenhuma","aliases":["u"],"usage":"@uptime"},
           
-{"name":"@loop","description":"Ativa o modo de repetição.","args":true,"guildOnly":true,"economy":false,"premium":false,"userPermissions":"Nenhuma","lillyPermissions":"Nenhuma","aliases":["l"],"usage":"@loop"},
+{"name":"loop","description":"Ativa o modo de repetição.","args":true,"guildOnly":true,"economy":false,"premium":false,"userPermissions":"Nenhuma","lillyPermissions":"Nenhuma","aliases":["l"],"usage":"@loop"},
             
-{"name":"@np","description":"Mostra música em reprodução.","args":false,"guildOnly":true,"economy":true,"premium":false,"userPermissions":"Nenhuma","lillyPermissions":"Nenhuma","aliases":["@np "],"usage":"@np "},
+{"name":"np","description":"Mostra música em reprodução.","args":false,"guildOnly":true,"economy":true,"premium":false,"userPermissions":"Nenhuma","lillyPermissions":"Nenhuma","aliases":["@np "],"usage":"@np "},
               
 {"name":"play","description":"Reproduz áudio do Youtube ou Soundcloud.","args":true,"guildOnly":false,"economy":true,"premium":false,"userPermissions":"Nenhuma","lillyPermissions":"Nenhuma","aliases":["p"],"usage":"@play"},
                 
