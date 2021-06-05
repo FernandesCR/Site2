@@ -12,7 +12,7 @@ routes.get("/", (req, res) => {
     title: "Jv e um simples bot de música",
     canon: `${config.url}`,
     desc:
-      "Venha conhecer um dos melhores e mais completos bot de música do discord, e o melhor e de graça!",
+      "Venha conhecer um dos melhores e mais completos bot de música do discord!",
   });
 });
 
